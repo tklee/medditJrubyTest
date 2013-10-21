@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="medditJrubyTest">
+<head>
+  <title>MedditJrubyTest</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%# javascript_include_tag "application" %>
+  <%# These are comments. %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    Meddit Procedures
+  </header>
+
+  <%= yield %>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+  <%= javascript_include_tag "application" %>
+
+</body>
+</html>

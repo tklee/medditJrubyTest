@@ -1,0 +1,20 @@
+<h1>Home#index</h1>
+
+<div ng-controller="ProceduresCtrl">
+
+  <div id="procedure-list-container">
+    <h3>Search: <input ng-model="query"></h4>
+    <ul>
+      <li ng-repeat="procedure in procedures | filter:query"
+          ng-click="showProcedure(procedure)">
+        <h3>{{procedure.name}} <small>({{procedure.location}})</small></h3>
+      </li>
+    </ul>
+  </div>
+
+  <div id="procedure-view-container" ng-show="selectedProcedure">
+    <h2>{{selectedProcedure.name}}</h2>
+    <p>{{selectedProcedure.location}}</p>
+  </div>
+</div>
+

@@ -1,3 +1,5 @@
+require 'elasticsearch'
+
 class ProceduresController < ApplicationController
   # GET /procedures
   # GET /procedures.json
@@ -51,6 +53,11 @@ class ProceduresController < ApplicationController
         format.json { render json: @procedure.errors, status: :unprocessable_entity }
       end
     end
+
+    client = Elasticsearch::Client.new log: true
+
+    client.index  index: 'procedureindex', type: 'cosmetic', id: @procedure.id, body: { name: @procedure.name, location: @procedure.location }
+
   end
 
   # PUT /procedures/1

@@ -7,6 +7,7 @@ gem 'rails', '3.2.14'
 
 gem 'activerecord-jdbcsqlite3-adapter'
 gem 'angularjs-rails'
+gem 'elasticsearch'
 
 gem 'jruby-openssl'
 

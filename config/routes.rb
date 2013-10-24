@@ -2,6 +2,7 @@ MedditJrubyTest::Application.routes.draw do
   get "landing/index"
 
   get "home/index"
+  get "home" => "home#index"
 
   resources :procedure_lists
   resources :procedures

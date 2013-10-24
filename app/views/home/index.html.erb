@@ -1,5 +1,48 @@
 <h1>Home#index</h1>
 
+<p>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+</p>
+<p>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+</p>
+<p>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+</p>
+<p>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+  <b>Hello world...</b>
+</p>
+
 <div ng-controller="ProceduresCtrl">
 
   <div id="procedure-list-container">
@@ -7,6 +50,9 @@
     <ul>
       <li ng-repeat="procedure in procedures | filter:query"
           ng-click="showProcedure(procedure)">
+        <h3>{{procedure.name}} <small>({{procedure.location}})</small></h3>
+        <h3>{{procedure.name}} <small>({{procedure.location}})</small></h3>
+        <h3>{{procedure.name}} <small>({{procedure.location}})</small></h3>
         <h3>{{procedure.name}} <small>({{procedure.location}})</small></h3>
       </li>
     </ul>
